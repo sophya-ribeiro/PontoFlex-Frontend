@@ -72,18 +72,6 @@
 
     <main>
 
-        <section class="container-central">
-
-            <div class="busca">
-
-            </div>
-
-            <div>
-                
-            </div>
-
-        </section>
-
         <div class="container-lateral">
 
             <div class="container-lateral-nav">
@@ -97,7 +85,7 @@
 
                     <ul class="secao-navegacao m-0 p-0">
                         <li><a class="itens-nav" href="#">Produtos cadastrados</a></li>
-                        <li><a class="itens-nav" href="#">Cadastrar produto</a></li>
+                        <li><a class="itens-nav" data-bs-toggle="modal" data-bs-target="#modalCadastrarProduto">Cadastrar produto</a></li>
                     </ul>
 
                     <h2 class="subt-secao pt-4">Categorias</h2>
@@ -122,6 +110,205 @@
 
             </footer>
 
+        </div>
+
+        <section class="container-central">
+
+            <div class="busca m-0">
+
+                <div class="busca-botao">
+                    <input class="form-control border rounded-pill busca-input" type="text" id="example-search-input"
+                        value="" placeholder="Buscar produto...">
+                    <ion-icon name="search" class="search-icon"></ion-icon>
+                </div>
+
+
+                <div class="filtro">
+
+                    <ion-icon name="filter" class="filter-icon"></ion-icon>
+                    <h1 class="texto-filtro m-0">Filtrar por:</h1>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle bg-body-secondary rounded" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Mais recentes
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item dropdown-item--primeiro" href="#">Mais antigos</a></li>
+                          <li><a class="dropdown-item" href="#">Maior quantidade</a></li>
+                          <li><a class="dropdown-item" href="#">Menor quantidade</a></li>
+                          <li><a class="dropdown-item" href="#">Maior preço</a></li>
+                          <li><a class="dropdown-item dropdown-item--ultimo" href="#">Menor preço</a></li>
+                        </ul>
+                      </div>
+                </div>
+
+            </div>
+
+            <div class="div-tabela rounded">
+                <table class="table rounded overflow-hidden table-striped table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Lote</th>
+                        <th scope="col">Qtd.</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Validade</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="tabela-texto py-3">1234567890ABC</td>
+                        <td class="tabela-texto py-3">Carro Sedan</td>
+                        <td class="tabela-texto py-3">Hyundai</td>
+                        <td class="tabela-texto py-3">HB20s</td>
+                        <td class="tabela-texto py-3">2184/32</td>
+                        <td class="tabela-texto py-3">100</td>
+                        <td class="tabela-texto py-3">R$ 234,00</td>
+                        <td class="tabela-texto py-3">12/01/2025</td>
+                        <td class="py-3"><a href=""><ion-icon name="create" class="create-icon"></ion-icon></td></a>
+                      </tr>
+
+                      <tr>
+                        <td class="tabela-texto py-3">1234567890ABC</td>
+                        <td class="tabela-texto py-3">Carro Sedan</td>
+                        <td class="tabela-texto py-3">Hyundai</td>
+                        <td class="tabela-texto py-3">HB20s</td>
+                        <td class="tabela-texto py-3">2184/32</td>
+                        <td class="tabela-texto py-3">100</td>
+                        <td class="tabela-texto py-3">R$ 234,00</td>
+                        <td class="tabela-texto py-3">12/01/2025</td>
+                        <td class="py-3"><a href=""><ion-icon name="create" class="create-icon"></ion-icon></td></a>
+                      </tr>
+
+                      <tr>
+                        <td class="tabela-texto py-3">1234567890ABC</td>
+                        <td class="tabela-texto py-3">Carro Sedan</td>
+                        <td class="tabela-texto py-3">Hyundai</td>
+                        <td class="tabela-texto py-3">HB20s</td>
+                        <td class="tabela-texto py-3">2184/32</td>
+                        <td class="tabela-texto py-3">100</td>
+                        <td class="tabela-texto py-3">R$ 234,00</td>
+                        <td class="tabela-texto py-3">12/01/2025</td>
+                        <td class="py-3"><a href=""><ion-icon name="create" class="create-icon"></ion-icon></td></a>
+                      </tr>
+
+                      <tr>
+                        <td class="tabela-texto py-3">1234567890ABC</td>
+                        <td class="tabela-texto py-3">Carro Sedan</td>
+                        <td class="tabela-texto py-3">Hyundai</td>
+                        <td class="tabela-texto py-3">HB20s</td>
+                        <td class="tabela-texto py-3">2184/32</td>
+                        <td class="tabela-texto py-3">100</td>
+                        <td class="tabela-texto py-3">R$ 234,00</td>
+                        <td class="tabela-texto py-3">12/01/2025</td>
+                        <td class="py-3"><a href=""><ion-icon name="create" class="create-icon"></ion-icon></td></a>
+                      </tr>
+
+                      <tr>
+                        <td class="tabela-texto py-3">1234567890ABC</td>
+                        <td class="tabela-texto py-3">Carro Sedan</td>
+                        <td class="tabela-texto py-3">Hyundai</td>
+                        <td class="tabela-texto py-3">HB20s</td>
+                        <td class="tabela-texto py-3">2184/32</td>
+                        <td class="tabela-texto py-3">100</td>
+                        <td class="tabela-texto py-3">R$ 234,00</td>
+                        <td class="tabela-texto py-3">12/01/2025</td>
+                        <td class="py-3"><a href=""><ion-icon name="create" class="create-icon"></ion-icon></td></a>
+                      </tr>
+
+                      <tr>
+                        <td class="tabela-texto py-3">1234567890ABC</td>
+                        <td class="tabela-texto py-3">Carro Sedan</td>
+                        <td class="tabela-texto py-3">Hyundai</td>
+                        <td class="tabela-texto py-3">HB20s</td>
+                        <td class="tabela-texto py-3">2184/32</td>
+                        <td class="tabela-texto py-3">100</td>
+                        <td class="tabela-texto py-3">R$ 234,00</td>
+                        <td class="tabela-texto py-3">12/01/2025</td>
+                        <td class="py-3"><a href=""><ion-icon name="create" class="create-icon"></ion-icon></td></a>
+                      </tr>
+
+                      <tr>
+                        <td class="tabela-texto py-3">1234567890ABC</td>
+                        <td class="tabela-texto py-3">Carro Sedan</td>
+                        <td class="tabela-texto py-3">Hyundai</td>
+                        <td class="tabela-texto py-3">HB20s</td>
+                        <td class="tabela-texto py-3">2184/32</td>
+                        <td class="tabela-texto py-3">100</td>
+                        <td class="tabela-texto py-3">R$ 234,00</td>
+                        <td class="tabela-texto py-3">12/01/2025</td>
+                        <td class="py-3"><a href=""><ion-icon name="create" class="create-icon"></ion-icon></td></a>
+                      </tr>
+
+                      <tr>
+                        <td class="tabela-texto py-3">1234567890ABC</td>
+                        <td class="tabela-texto py-3">Carro Sedan</td>
+                        <td class="tabela-texto py-3">Hyundai</td>
+                        <td class="tabela-texto py-3">HB20s</td>
+                        <td class="tabela-texto py-3">2184/32</td>
+                        <td class="tabela-texto py-3">100</td>
+                        <td class="tabela-texto py-3">R$ 234,00</td>
+                        <td class="tabela-texto py-3">12/01/2025</td>
+                        <td class="py-3"><a href=""><ion-icon name="create" class="create-icon"></ion-icon></td></a>
+                      </tr>
+
+                      <tr>
+                        <td class="tabela-texto py-3">1234567890ABC</td>
+                        <td class="tabela-texto py-3">Carro Sedan</td>
+                        <td class="tabela-texto py-3">Hyundai</td>
+                        <td class="tabela-texto py-3">HB20s</td>
+                        <td class="tabela-texto py-3">2184/32</td>
+                        <td class="tabela-texto py-3">100</td>
+                        <td class="tabela-texto py-3">R$ 234,00</td>
+                        <td class="tabela-texto py-3">12/01/2025</td>
+                        <td class="py-3"><a href=""><ion-icon name="create" class="create-icon"></ion-icon></td></a>
+                      </tr>
+
+                      <tr>
+                        <td class="tabela-texto py-3">1234567890ABC</td>
+                        <td class="tabela-texto py-3">Carro Sedan</td>
+                        <td class="tabela-texto py-3">Hyundai</td>
+                        <td class="tabela-texto py-3">HB20s</td>
+                        <td class="tabela-texto py-3">2184/32</td>
+                        <td class="tabela-texto py-3">100</td>
+                        <td class="tabela-texto py-3">R$ 234,00</td>
+                        <td class="tabela-texto py-3">12/01/2025</td>
+                        <td class="py-3"><a href=""><ion-icon name="create" class="create-icon"></ion-icon></td></a>
+                      </tr>
+
+                    </tbody>
+                  </table>
+            </div>
+        </section>
+
+        <div class="modal fade" id="modalCadastrarProduto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header text-white">
+                  <h1 class="modal-title fs-6" id="exampleModalLabel">Novo produto</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Recipient:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-primary rounded botao-cadastrar border-0 py-2 px-4">Cadastrar produto</button>
+                </div>
+              </div>
+            </div>
         </div>
 
     </main>

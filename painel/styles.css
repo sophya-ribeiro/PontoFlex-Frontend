@@ -81,7 +81,7 @@ li a {
     box-shadow: 2px 3px 10px -2px rgba(0, 0, 0, 0.2);
 }
 
-.person-circle-outline{
+.person-circle-outline {
     font-size: 30px;
     color: #777777;
 }
@@ -108,7 +108,7 @@ li a {
     font-family: "Poppins", sans-serif !important;
     border-radius: 150px !important;
     border-width: 0.12rem !important;
-  }
+}
 
 .dropdown-item {
     display: flex !important;
@@ -140,7 +140,7 @@ li a {
     width: 18px !important;
 }
 
-.dropdown-icon{
+.dropdown-icon {
     font-size: 20px;
 }
 
@@ -151,35 +151,36 @@ main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 /* ----- CONTEUDO LATERAL ------ */
 
-.container-lateral{
+.container-lateral {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 3rem;
     min-height: 500px;
+    min-width: 250px;
+    margin-bottom: 2rem;
 }
 
-.container-lateral-nav{
+.container-lateral-nav {
     margin-top: 2rem;
     background-color: white;
     border-radius: 1rem;
 }
 
-.container-lateral nav{
+.container-lateral nav {
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem 2rem 2rem;
 }
 
-.container-titulo{
+.container-titulo {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
@@ -189,51 +190,137 @@ main {
     align-items: center;
 }
 
-.cube-icon{
+.cube-icon {
     font-size: 34px;
     color: white;
 }
 
-.titulo-secao{
+.titulo-secao {
     font-size: 22px;
     color: white;
     font-weight: 600;
 }
 
-.subt-secao{
+.subt-secao {
     font-size: 18px;
     font-weight: 600;
 }
 
-.secao-navegacao{
+.secao-navegacao {
     display: flex;
     flex-direction: column;
 }
 
-.itens-nav{
+.itens-nav {
     font-weight: 300;
     font-size: 15px;
+    cursor: pointer;
+}
+
+/* -------- MODAL -------- */
+
+.modal-header{
+    background-color: #20AA57 !important;
+}
+
+.modal-title{
+	font-family: "Poppins", sans-serif !important;
+    font-weight: 600 !important;
 }
 
 /* -------- FOOTER -------- */
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
 }
 
-footer a{
+footer a {
     color: #585858;
     font-size: 15px;
     font-weight: 400;
 }
 
-footer div{
+footer div {
     margin-top: 2rem;
     font-size: 14px;
     font-weight: 400;
 
 }
+
+/* ----- CONTAINER CENTRAL ----- */
+
+.container-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    padding: 0rem 0rem 1rem 1rem;
+    width: 100%;
+}
+
+.busca {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 18px;
+}
+
+.busca-botao{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.busca-input{
+    width: 100% !important;
+}
+
+.search-icon {
+    font-size: 22px;
+    margin-left: -3rem !important;
+}
+
+.filtro{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+}
+
+.filter-icon{
+    font-size: 22px;
+}
+
+.texto-filtro{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.div-tabela{
+    width: 100%;
+    display: flex;
+}
+
+.create-icon{
+    font-size: 20px;
+    color: black;
+}
+
+.tabela-texto{
+    font-size: 14px !important;
+}
+
+/* -------- RESPONSIVIDADE -------- */
 
 
 @media (max-width: 1035px) {}
