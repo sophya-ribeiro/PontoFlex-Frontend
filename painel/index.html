@@ -128,7 +128,7 @@
           <ion-icon name="filter" class="filter-icon"></ion-icon>
           <h1 class="texto-filtro m-0">Filtrar por:</h1>
           <div class="dropdown">
-            <button class="btn btn-light dropdown-toggle bg-body-secondary rounded" type="button"
+            <button class="btn btn-light dropdown-toggle rounded btn-secondary px-4 py-2" type="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Mais recentes
             </button>
@@ -283,6 +283,20 @@
 
           </tbody>
         </table>
+
+        <nav aria-label="Navegação de página exemplo">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Próximo</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </section>
 
@@ -292,7 +306,7 @@
 
         <div class="modal-content border-0">
           <div class="modal-header text-white">
-            <h1 class="modal-title fs-6 p-2" id="modalCadastrarProduto">Novo produto</h1>
+            <h1 class="modal-title p-1" id="modalCadastrarProduto">Novo produto</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
@@ -302,39 +316,81 @@
               <div class="mb-3 div-form">
 
                 <div class="w-nome">
-                  <label for="produto-nome" class="col-form-label">Nome</label>
-                  <input type="text" class="form-control" id="produto-nome" placeholder="Digite o nome do produto">
+                  <label for="produto-nome" class="col-form-label">Nome <span class="form-span">*</span></label>
+                  <input type="text" class="form-control" id="produto-nome" placeholder="Digite o nome do produto" required>
                 </div>
 
                 <div class="w-categoria">
-                  <label for="produto-nome" class="col-form-label">Categoria</label>
+                  <label for="produto-nome" class="col-form-label">Categoria <span class="form-span">*</span></label>
                   
                   <div class="dropdown w-dropdown">
                     <button class="btn btn-secondary dropdown-toggle w-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Selecione a categoria
                     </button>
                     <ul class="dropdown-menu overflow-hidden">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Insumos</a></li>
+                      <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                      <li><a class="dropdown-item" href="#">Peças</a></li>
+                      <li><a class="dropdown-item" href="#">Produtos</a></li>
                     </ul>
                   </div>
                 </div>
 
               </div>
 
-              <div class="mb-3">
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
+              <div class="mb-3 div-form">
+
+                <div class="w-marca">
+                  <label for="produto-marca" class="col-form-label">Marca <span class="form-span">*</span></label>
+                  <input type="text" class="form-control" id="produto-marca" placeholder="Digite a marca do produto" required>
+                </div>
+
+                <div class="w-modelo">
+                  <label for="produto-modelo" class="col-form-label">Modelo <span class="form-span">*</span></label>
+                  <input type="text" class="form-control" id="produto-modelo" placeholder="Digite o modelo do produto" required>
+                </div>
+
+                <div class="w-lote">
+                  <label for="produto-lote" class="col-form-label">Lote <span class="form-span">*</span></label>
+                  <input type="text" class="form-control" id="produto-lote" placeholder="Lote" required>
+                </div>
+
+              </div>
+
+              <div class="mb-3 div-form">
+
+                <div>
+                  <label for="produto-marca" class="col-form-label">Código <span class="form-span">*</span></label>
+                  <input type="text" class="form-control" id="produto-codigo" placeholder="1234567890ABC" required>
+                </div>
+
+                <div>
+                  <label for="produto-preco" class="col-form-label">Preço <span class="form-span">*</span></label>
+                  <input type="text" class="form-control" id="produto-preco" placeholder="R$00,00" required>
+                </div>
+
+                <div>
+                  <label for="produto-lote" class="col-form-label">Quantidade <span class="form-span">*</span></label>
+                  <input type="number" class="form-control" id="produto-quantidade" placeholder="0" required>
+                </div>
+
+                <div>
+                  <label for="produto-lote" class="col-form-label">Validade</label>
+                  <input type="date" class="form-control" id="produto-validade" placeholder="Lote">
+                  <p class="validade-texto">Deixe vazio caso não tenha.</p>
+                </div>
+
+              </div>
+
+              
+              <div class="modal-footer border-0 p-0 pt-3">
+                <button type="submit" class="btn btn-primary rounded botao-cadastrar border-0 py-2 px-4">Cadastrar
+                  produto</button>
               </div>
             </form>
 
           </div>
 
-          <div class="modal-footer border-0">
-            <button type="button" class="btn btn-primary rounded botao-cadastrar border-0 py-2 px-4">Cadastrar
-              produto</button>
-          </div>
 
         </div>
       </div>
