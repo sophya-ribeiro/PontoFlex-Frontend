@@ -3,11 +3,16 @@ body {
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
-	background-color: #fafafa !important;
+	background-color: #f7f7f7 !important;
 }
 
 .botao-cadastrar{
 	background-color: #20AA57 !important;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #f5fff9;
 }
 
 

@@ -217,17 +217,6 @@ main {
     cursor: pointer;
 }
 
-/* -------- MODAL -------- */
-
-.modal-header{
-    background-color: #20AA57 !important;
-}
-
-.modal-title{
-	font-family: "Poppins", sans-serif !important;
-    font-weight: 600 !important;
-}
-
 /* -------- FOOTER -------- */
 
 footer {
@@ -272,14 +261,14 @@ footer div {
     border-radius: 18px;
 }
 
-.busca-botao{
+.busca-botao {
     align-items: center;
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-.busca-input{
+.busca-input {
     width: 100% !important;
 }
 
@@ -288,7 +277,7 @@ footer div {
     margin-left: -3rem !important;
 }
 
-.filtro{
+.filtro {
     align-items: center;
     display: flex;
     justify-content: flex-end;
@@ -297,27 +286,77 @@ footer div {
     gap: 1rem;
 }
 
-.filter-icon{
+.filter-icon {
     font-size: 22px;
 }
 
-.texto-filtro{
+.texto-filtro {
     font-size: 15px;
     font-weight: 400;
 }
 
-.div-tabela{
+.div-tabela {
     width: 100%;
     display: flex;
 }
 
-.create-icon{
+.create-icon {
     font-size: 20px;
     color: black;
 }
 
-.tabela-texto{
+.tabela-texto {
     font-size: 14px !important;
+}
+
+/* ---------- MODAIS ---------- */
+
+.modal-content {
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.modal-header {
+    background-color: #20AA57 !important;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.modal-title {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.div-form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.w-nome{
+    width: 60%;
+}
+
+.w-categoria{
+    width: 35%;
+}
+
+.w-dropdown{
+   width: 100% !important;
+   justify-content: space-between;
+}
+
+.botao-categoria{
+    width: 90% !important;
+}
+
+.btn-secondary {
+    --bs-btn-color: #000000 !important;
+    --bs-btn-bg: #e1e1e1 !important;
+    border: none !important;
 }
 
 /* -------- RESPONSIVIDADE -------- */
