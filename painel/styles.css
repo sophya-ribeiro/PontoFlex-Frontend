@@ -413,7 +413,6 @@ input{
 .btn-secondary {
     --bs-btn-color: #000000 !important;
     --bs-btn-bg: #edecec !important;
-    border: none !important;
     padding: 0.55rem !important;
 }
 
@@ -426,7 +425,6 @@ input{
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
     color: black !important;
     background-color:  #d4d4d4 !important;
-    border: none !important;
 }
 
 .validade-texto{
