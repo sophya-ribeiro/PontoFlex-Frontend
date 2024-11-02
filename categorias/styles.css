@@ -90,12 +90,3 @@ input{
     padding-top: 5px;
     padding-left: 4px;
 }
-
-/* -------- RESPONSIVIDADE -------- */
-
-
-@media (max-width: 1035px) {}
-
-@media (min-width: 721px) {}
-
-@media (max-width: 720px) {}
