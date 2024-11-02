@@ -90,3 +90,22 @@ input{
     padding-top: 5px;
     padding-left: 4px;
 }
+
+
+/* -------- SELECAO DE CORES -------- */
+
+.color-picker-label {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.color-picker-label.selected {
+    border-color: #6c757d; /* borda cinza */
+}
+.color-picker-input {
+    display: none;
+}
