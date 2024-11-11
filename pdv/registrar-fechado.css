@@ -28,15 +28,9 @@
     align-items: center;
 }
 
-.texto-pdv{
-    color: #5e6561;
-    font-size: 15px;
-    text-align: center;
-    font-weight: 400;
-}
-
 .texto-abertura{
     color:#303030;
-    font-size: 10px;
+    font-size: 14px;
     margin-top: 0.5rem;
+    font-weight: 300;
 }
