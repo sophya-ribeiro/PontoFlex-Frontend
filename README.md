@@ -12,7 +12,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
 
 - **HTML5**: para a estrutura das páginas.
 - **CSS3**: para o estilo e layout.
-- **JavaScript (Vanilla)**: para interatividade.
+- **JavaScript**: para interatividade.
 - **Bootstrap**: para componentes e design responsivo.
 
 ## Funcionalidades Implementadas no Frontend
@@ -20,7 +20,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
 - **Tela de Login**: Interface para autenticação do funcionário.
 - **Dashboard do Gerente**: Visualização de categorias e produtos cadastrados.
 - **Tela de Controle de Estoque**: Filtros para visualizar produtos por quantidade, preço e data de cadastro.
-- **Interface de Venda**: Tela amigável para os operadores de caixa.
+- **Interface de Venda**: Tela amigável para os operadores de caixa. Principal transação do sistema.
 
 ## Integração com o Backend
 
