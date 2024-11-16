@@ -111,14 +111,14 @@
 
             <div class="container-venda">
                 <div class="div-titulo">
-                    <h1 class="venda-texto">Nova venda</h1>
+                    <h1 class="venda-texto m-0">Nova venda</h1>
                     <button class="botao-adicionar">
                         <ion-icon name="add-circle" class="add-icon"></ion-icon>
                         Adicionar produto
                     </button>
                 </div>
-                <div class="div-tabela rounded">
-                    <table class="table rounded overflow-hidden">
+                <div class="div-tabela">
+                    <table>
                         <thead>
                             <tr>
                                 <th>Item</th>
@@ -134,35 +134,119 @@
                             <tr>
                                 <td class="tabela-texto py-2">Carro Sedan - HB20s</td>
                                 <td class="tabela-texto py-2">Hyundai</td>
-                                <td class="tabela-texto py-2"> <input class="input-qtd border" type="number" id="" min="1" max="estoque" value="1"></td>
+                                <td class="tabela-texto py-2"> <input class="input-qtd border" type="number" id=""
+                                        min="1" max="estoque" value="1"></td>
                                 <td class="tabela-texto py-2">R$ 234,00</td>
                                 <td class="tabela-texto py-2">R$ 234,00</td>
-                                <td class="py-2"><a href=""><ion-icon name="trash-outline" class="trash-icon"></ion-icon></td>
+                                <td class="py-2"><a href=""><ion-icon name="trash" class="trash-icon"></ion-icon></td>
                                 </a>
                             </tr>
 
                             <tr>
                                 <td class="tabela-texto py-2">Carro Sedan - HB20s</td>
                                 <td class="tabela-texto py-2">Hyundai</td>
-                                <td class="tabela-texto py-2"> <input class="input-qtd border" type="number" id="" min="1" max="estoque" value="1"></td>
+                                <td class="tabela-texto py-2"> <input class="input-qtd border" type="number" id=""
+                                        min="1" max="estoque" value="1"></td>
                                 <td class="tabela-texto py-2">R$ 234,00</td>
                                 <td class="tabela-texto py-2">R$ 234,00</td>
-                                <td class="py-2"><a href=""><ion-icon name="trash-outline" class="trash-icon"></ion-icon></td>
+                                <td class="py-2"><a href=""><ion-icon name="trash" class="trash-icon"></ion-icon></td>
                                 </a>
                             </tr>
 
                             <tr>
                                 <td class="tabela-texto py-2">Carro Sedan - HB20s</td>
                                 <td class="tabela-texto py-2">Hyundai</td>
-                                <td class="tabela-texto py-2"> <input class="input-qtd border" type="number" id="" min="1" max="estoque" value="1"></td>
+                                <td class="tabela-texto py-2"> <input class="input-qtd border" type="number" id=""
+                                        min="1" max="estoque" value="1"></td>
                                 <td class="tabela-texto py-2">R$ 234,00</td>
                                 <td class="tabela-texto py-2">R$ 234,00</td>
-                                <td class="py-2"><a href=""><ion-icon name="trash-outline" class="trash-icon"></ion-icon></td>
+                                <td class="py-2"><a href=""><ion-icon name="trash" class="trash-icon"></ion-icon></td>
                                 </a>
                             </tr>
                         </tbody>
                     </table>
 
+                </div>
+
+                <div class="container-pagamento">
+
+                    <h2 class="titulo-pagamento">Pagamento</h2>
+                    <h3 class="subtitulo-pagamento">Escolha a forma de pagamento</h3>
+
+                    <div class="container-pagamentos">
+                        <label>
+                            <input type="radio" name="pagamento" value="dinheiro">
+                            <div class="pagamento-opcao">Dinheiro</div>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="pagamento" value="pix">
+                            <div class="pagamento-opcao">Pix</div>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="pagamento" value="debito">
+                            <div class="pagamento-opcao">Cartão Débito</div>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="pagamento" value="credito" checked>
+                            <div class="pagamento-opcao">Cartão Crédito</div>
+                        </label>
+                    </div>
+
+                    <div class="container-parcelamento">
+    
+                        <h4 class="subtitulo-pagamento">Escolha a forma de parcelamento</h3>
+    
+                        <div class="container-parcelamentos">
+                            <h5 class="titulo-parcelamento">Parcelas:</h4>
+                            <label>
+                                <input type="radio" name="parcela" value="1x" checked>
+                                <div class="parcela-opcao">1x R$ 00,00</div>
+                            </label>
+    
+                            <label>
+                                <input type="radio" name="parcela" value="2x">
+                                <div class="parcela-opcao">2x R$ 00,00</div>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="parcela" value="2x">
+                                <div class="parcela-opcao">3x R$ 00,00</div>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="parcela" value="5x">
+                                <div class="parcela-opcao">5x R$ 00,00</div>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="parcela" value="10x">
+                                <div class="parcela-opcao">10x R$ 00,00</div>
+                            </label>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="container-valor">
+                    <div class="div-valor">
+                        <p class="m-0 titulo-valor">Desconto:</p>
+                        <input type="numeric" id="valor-desconto" class="input-desconto m-0" placeholder="R$ 00,00">
+                    </div>
+
+                    <div class="div-valor">
+                        <p class="titulo-valor m-0">Valor total:</p>
+                        <p class="texto-valortotal m-0">R$ 1.768.098,78</p>
+                    </div>
+                </div>
+                
+
+
+
+                <div class="container-registrarvenda">
+                    <input type="submit" class="botao-registrar" value="Registrar venda">
                 </div>
             </div>
 
