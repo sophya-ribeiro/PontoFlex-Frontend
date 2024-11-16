@@ -1,0 +1,97 @@
+.botao-caixa-fechado {
+    background-color: #20AA57;
+    padding: 0.6rem 2rem 0.6rem 2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.botao-caixa-aberto {
+    background-color: #FD8719;
+    padding: 0.6rem 2rem 0.6rem 2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.div-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-pdv {
+    color: #5e6561;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.texto-data {
+    color: #303030;
+    font-size: 10px;
+    margin-top: 0.5rem;
+}
+
+/* ------- VENDA ------- */
+
+.container-venda {
+    background-color: white;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.div-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.venda-texto {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.botao-adicionar {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #20AA57;
+    color: white;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.add-icon{
+    font-size: 25px;
+    color: white;
+}
+
+.input-qtd {
+    width: 50px !important;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+}
+
+table
+
+th {
+    background-color: #C6C6C6 !important;
+}
+
+.trash-icon{
+    font-size: 20px;
+    color: black;
+}
