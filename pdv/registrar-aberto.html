@@ -258,79 +258,107 @@
 
     <div class="modal fade" id="modalAdicionarProduto" tabindex="-1" aria-labelledby="modalAdicionarProduto"
         aria-hidden="true">
-        <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
 
             <div class="modal-content border-0">
                 <div class="modal-header text-white">
-                    <h1 class="modal-title p-1" id="modalCadastrarProduto">Novo produto</h1>
+                    <h1 class="modal-title p-1" id="modalCadastrarProduto">Inclusão de produto</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body">
+                <div class="modal-body px-4">
+                    <div class="mb-3">
 
-                    <form>
-                        <div class="mb-3 div-form">
-
-                            <div class="w-nome">
-                                <label for="produto-nome" class="col-form-label">Nome <span
-                                        class="form-span">*</span></label>
-                                <input type="text" class="form-control" id="produto-nome"
-                                    placeholder="Digite o nome do produto" required>
-                            </div>
-
-                            <div class="w-categoria">
-                                <label for="produto-nome" class="col-form-label">Categoria <span
-                                        class="form-span">*</span></label>
-
-                                <div class="dropdown w-dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle w-dropdown" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Selecione a categoria
-                                    </button>
-                                    <ul class="dropdown-menu overflow-hidden">
-                                        <li><a class="dropdown-item" href="#">Insumos</a></li>
-                                        <li><a class="dropdown-item" href="#">Acessórios</a></li>
-                                        <li><a class="dropdown-item" href="#">Peças</a></li>
-                                        <li><a class="dropdown-item" href="#">Produtos</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
+                        <div class="busca-botao">
+                            <input class="form-control border rounded-pill busca-input" type="text"
+                                id="example-search-input" value="" placeholder="Buscar produto...">
+                            <ion-icon name="search" class="search-icon"></ion-icon>
                         </div>
 
-                        <div class="mb-3 div-form">
+                    </div>
 
-                            <div class="w-marca">
-                                <label for="produto-marca" class="col-form-label">Marca <span
-                                        class="form-span">*</span></label>
-                                <input type="text" class="form-control" id="produto-marca"
-                                    placeholder="Digite a marca do produto" required>
-                            </div>
+                    <div class="mb-3">
+                        <h2 class="texto-resultados">Resultados encontrados:</h2>
+                        <ul class="lista-titulo pl-0">
+                            <li class="lista-item-icone"></li>
+                            <li class="lista-item">Nome</li>
+                            <li class="lista-item">Marca</li>
+                            <li class="lista-item">Modelo</li>
+                            <li class="lista-item">Lote</li>
+                            <li class="lista-item-qtd">Qtd.</li>
+                            <li class="lista-item">Preço</li>
+                            <li class="lista-item-icone"></li>
+                        </ul>
 
-                            <div class="w-modelo">
-                                <label for="produto-modelo" class="col-form-label">Modelo <span
-                                        class="form-span">*</span></label>
-                                <input type="text" class="form-control" id="produto-modelo"
-                                    placeholder="Digite o modelo do produto" required>
-                            </div>
+                    </div>
 
-                            <div class="w-lote">
-                                <label for="produto-lote" class="col-form-label">Lote <span
-                                        class="form-span">*</span></label>
-                                <input type="text" class="form-control" id="produto-lote" placeholder="Lote" required>
-                            </div>
+                    <div class="resultados-produtos">
+                        <ul class="lista-produto py-3">
+                            <li class="lista-item-icone">
+                                <div class="categoria rounded-circle"></div>
+                            </li>
+                            <li class="lista-item">Carro Sedan</li>
+                            <li class="lista-item">Hyundai</li>
+                            <li class="lista-item">HB20s</li>
+                            <li class="lista-item">2184/32</li>
+                            <li class="lista-item-qtd">100</li>
+                            <li class="lista-item">R$ 234,00</li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      
+                                    </label>
+                                  </div>
+                            </li>
+                        </ul>
 
-                        </div>
+                        <ul class="lista-produto py-3">
+                            <li class="lista-item-icone">
+                                <div class="categoria rounded-circle"></div>
+                            </li>
+                            <li class="lista-item">Carro Sedan</li>
+                            <li class="lista-item">Hyundai</li>
+                            <li class="lista-item">HB20s</li>
+                            <li class="lista-item">2184/32</li>
+                            <li class="lista-item-qtd">100</li>
+                            <li class="lista-item">R$ 234,00</li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      
+                                    </label>
+                                  </div>
+                            </li>
+                        </ul>
 
-                        <div class="modal-footer border-0 p-0 pt-3">
-                            <button type="submit" class="btn btn-primary rounded botao border-0 py-2 px-4">Cadastrar
-                                produto</button>
-                        </div>
-                    </form>
+                        <ul class="lista-produto py-3">
+                            <li class="lista-item-icone">
+                                <div class="categoria rounded-circle"></div>
+                            </li>
+                            <li class="lista-item">Carro Sedan</li>
+                            <li class="lista-item">Hyundai</li>
+                            <li class="lista-item">HB20s</li>
+                            <li class="lista-item">2184/32</li>
+                            <li class="lista-item-qtd">100</li>
+                            <li class="lista-item">R$ 234,00</li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      
+                                    </label>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="modal-footer border-0 p-0 pt-3">
+                        <button type="submit" class="btn btn-primary rounded botao border-0 py-2 px-4">Adicionar
+                            produto</button>
+                    </div>
                 </div>
-
-
             </div>
         </div>
     </div>
