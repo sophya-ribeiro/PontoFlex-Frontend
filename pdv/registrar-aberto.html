@@ -112,7 +112,7 @@
             <div class="container-venda">
                 <div class="div-titulo">
                     <h1 class="venda-texto m-0">Nova venda</h1>
-                    <button class="botao-adicionar">
+                    <button class="botao-adicionar" data-bs-toggle="modal" data-bs-target="#modalAdicionarProduto">
                         <ion-icon name="add-circle" class="add-icon"></ion-icon>
                         Adicionar produto
                     </button>
@@ -196,64 +196,144 @@
                     </div>
 
                     <div class="container-parcelamento">
-    
+
                         <h4 class="subtitulo-pagamento">Escolha a forma de parcelamento</h3>
-    
-                        <div class="container-parcelamentos">
-                            <h5 class="titulo-parcelamento">Parcelas:</h4>
-                            <label>
-                                <input type="radio" name="parcela" value="1x" checked>
-                                <div class="parcela-opcao">1x R$ 00,00</div>
-                            </label>
-    
-                            <label>
-                                <input type="radio" name="parcela" value="2x">
-                                <div class="parcela-opcao">2x R$ 00,00</div>
-                            </label>
 
-                            <label>
-                                <input type="radio" name="parcela" value="2x">
-                                <div class="parcela-opcao">3x R$ 00,00</div>
-                            </label>
+                            <div class="container-parcelamentos">
+                                <h5 class="titulo-parcelamento">Parcelas:
+                        </h4>
+                        <label>
+                            <input type="radio" name="parcela" value="1x" checked>
+                            <div class="parcela-opcao">1x R$ 00,00</div>
+                        </label>
 
-                            <label>
-                                <input type="radio" name="parcela" value="5x">
-                                <div class="parcela-opcao">5x R$ 00,00</div>
-                            </label>
+                        <label>
+                            <input type="radio" name="parcela" value="2x">
+                            <div class="parcela-opcao">2x R$ 00,00</div>
+                        </label>
 
-                            <label>
-                                <input type="radio" name="parcela" value="10x">
-                                <div class="parcela-opcao">10x R$ 00,00</div>
-                            </label>
-                        </div>
-    
-                    </div>
-                </div>
+                        <label>
+                            <input type="radio" name="parcela" value="2x">
+                            <div class="parcela-opcao">3x R$ 00,00</div>
+                        </label>
 
-                <div class="container-valor">
-                    <div class="div-valor">
-                        <p class="m-0 titulo-valor">Desconto:</p>
-                        <input type="numeric" id="valor-desconto" class="input-desconto m-0" placeholder="R$ 00,00">
+                        <label>
+                            <input type="radio" name="parcela" value="5x">
+                            <div class="parcela-opcao">5x R$ 00,00</div>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="parcela" value="10x">
+                            <div class="parcela-opcao">10x R$ 00,00</div>
+                        </label>
                     </div>
 
-                    <div class="div-valor">
-                        <p class="titulo-valor m-0">Valor total:</p>
-                        <p class="texto-valortotal m-0">R$ 1.768.098,78</p>
-                    </div>
                 </div>
-                
+            </div>
 
-
-
-                <div class="container-registrarvenda">
-                    <input type="submit" class="botao-registrar" value="Registrar venda">
+            <div class="container-valor">
+                <div class="div-valor">
+                    <p class="m-0 titulo-valor">Desconto:</p>
+                    <input type="numeric" id="valor-desconto" class="input-desconto m-0" placeholder="R$ 00,00">
                 </div>
+
+                <div class="div-valor">
+                    <p class="titulo-valor m-0">Valor total:</p>
+                    <p class="texto-valortotal m-0">R$ 1.768.098,78</p>
+                </div>
+            </div>
+
+
+            <div class="container-registrarvenda">
+                <input type="submit" class="btn btn-primary rounded botao border-0 py-2 px-4" value="Registrar venda">
+            </div>
             </div>
 
         </section>
 
 
     </main>
+
+    <!------- MODAIS ------->
+
+    <div class="modal fade" id="modalAdicionarProduto" tabindex="-1" aria-labelledby="modalAdicionarProduto"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="modal-header text-white">
+                    <h1 class="modal-title p-1" id="modalCadastrarProduto">Novo produto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form>
+                        <div class="mb-3 div-form">
+
+                            <div class="w-nome">
+                                <label for="produto-nome" class="col-form-label">Nome <span
+                                        class="form-span">*</span></label>
+                                <input type="text" class="form-control" id="produto-nome"
+                                    placeholder="Digite o nome do produto" required>
+                            </div>
+
+                            <div class="w-categoria">
+                                <label for="produto-nome" class="col-form-label">Categoria <span
+                                        class="form-span">*</span></label>
+
+                                <div class="dropdown w-dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle w-dropdown" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Selecione a categoria
+                                    </button>
+                                    <ul class="dropdown-menu overflow-hidden">
+                                        <li><a class="dropdown-item" href="#">Insumos</a></li>
+                                        <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                                        <li><a class="dropdown-item" href="#">Peças</a></li>
+                                        <li><a class="dropdown-item" href="#">Produtos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3 div-form">
+
+                            <div class="w-marca">
+                                <label for="produto-marca" class="col-form-label">Marca <span
+                                        class="form-span">*</span></label>
+                                <input type="text" class="form-control" id="produto-marca"
+                                    placeholder="Digite a marca do produto" required>
+                            </div>
+
+                            <div class="w-modelo">
+                                <label for="produto-modelo" class="col-form-label">Modelo <span
+                                        class="form-span">*</span></label>
+                                <input type="text" class="form-control" id="produto-modelo"
+                                    placeholder="Digite o modelo do produto" required>
+                            </div>
+
+                            <div class="w-lote">
+                                <label for="produto-lote" class="col-form-label">Lote <span
+                                        class="form-span">*</span></label>
+                                <input type="text" class="form-control" id="produto-lote" placeholder="Lote" required>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer border-0 p-0 pt-3">
+                            <button type="submit" class="btn btn-primary rounded botao border-0 py-2 px-4">Cadastrar
+                                produto</button>
+                        </div>
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
 
 </body>
