@@ -166,14 +166,6 @@ td {
     margin-top: 1.5rem;
 }
 
-.botao-registrar {
-    padding: 0.5rem 1.3rem 0.5rem 1.3rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #20AA57;
-    color: white;
-}
-
 .titulo-pagamento {
     font-size: 18px;
     font-weight: 600;
@@ -271,3 +263,12 @@ input[type="radio"]:checked+.parcela-opcao {
 .titulo-parcelamento{
     font-size: 16px;
 }
+
+.botao-registrar {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #20AA57;
+    color: white;
+}
+
